@@ -1,22 +1,13 @@
----
-description: >-
-  L'API de RDV-Solidarités vous permet de lire, créer et modifier des données
-  dans notre base depuis votre logiciel.
----
-
 # API de requêtes
 
-{% hint style="info" %}
-Toutes les fonctionnalités de RDV-Solidarités ne sont pas encore disponibles via l’API. Contactez-nous si vous avez besoin de fonctionnalités qui ne sont pas encore présentes.
-{% endhint %}
+L'API de RDV-Solidarités vous permet de lire, créer et modifier des données
+dans notre base depuis votre logiciel.
 
-{% hint style="warning" %}
-En production, les requêtes doivent être adressées à **`https://www.rdv-solidarites.fr`**  \(pas à ~~`https://rdv-solidarites.fr`~~\)
-{% endhint %}
+    Toutes les fonctionnalités de RDV-Solidarités ne sont pas encore disponibles via l’API. Contactez-nous si vous avez besoin de fonctionnalités qui ne sont pas encore présentes.
 
-{% hint style="warning" %}
-En démo, les requêtes doivent être adressées à **`https://demo.rdv-solidarites.fr`**
-{% endhint %}
+    En production, les requêtes doivent être adressées à **`https://www.rdv-solidarites.fr`**  \(pas à ~~`https://rdv-solidarites.fr`~~\)
+
+    En démo, les requêtes doivent être adressées à **`https://demo.rdv-solidarites.fr`**
 
 
 
