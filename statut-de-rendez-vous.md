@@ -1,8 +1,6 @@
----
-description: "L’état des rendez-vous permet de suivre l’évolution d’un rendez-vous, et de connaître les rendez-vous honorés ou ratés\_: les fameux «\_lapins\_»."
----
-
 # États de rendez-vous
+
+L’état des rendez-vous permet de suivre l’évolution d’un rendez-vous, et de connaître les rendez-vous honorés ou ratés\_: les fameux «\_lapins\_».
 
 ## _Status_ en base et dans les APIs
 
@@ -13,14 +11,12 @@ description: "L’état des rendez-vous permet de suivre l’évolution d’un r
 * `noshow` : Le rendez-vous est passé, mais l’usager ne c’est pas présenté.
 * `seen` : L’usager a bien été vu en rendez-vous.
 
-{% hint style="warning" %}
-**Note : changements du 10 août 2021**
+    **Note : changements du 10 août 2021**
 
-* Le status`revoked`a été ajouté. Précédemment, on ne faisait pas de différence entre une annulation à l’initiative de l’usager ou du service.
-* Le status `noshow` était auparavant intitulé `notexcused`.
+    * Le status`revoked`a été ajouté. Précédemment, on ne faisait pas de différence entre une annulation à l’initiative de l’usager ou du service.
+    * Le status `noshow` était auparavant intitulé `notexcused`.
 
-Ces changements sont visibles dans les APIs de requêtes et de notifications \(webhooks\). Un mode de compatibilité est temporairement disponible si besoin.
-{% endhint %}
+    Ces changements sont visibles dans les APIs de requêtes et de notifications \(webhooks\). Un mode de compatibilité est temporairement disponible si besoin.
 
 ## Comportement dans l’interface
 

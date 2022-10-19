@@ -303,13 +303,9 @@ Si vous souhaitez créer un usager proche, remplissez le paramètre `responsible
 * `user` : USER
   * `user_profiles` Profils de l'usager dans les organisations accessibles à l'agent faisant la requête
 
-{% hint style="info" %}
-Si vous tentez de créer un usager avec un email déjà utilisé, l'ID de l'usager déjà existant vous sera retourné dans les champs d'erreurs
-{% endhint %}
+    Si vous tentez de créer un usager avec un email déjà utilisé, l'ID de l'usager déjà existant vous sera retourné dans les champs d'erreurs
 
-{% hint style="info" %}
-Cet endpoint ne déclenche pas l'envoi d'invitations. L'usager ne recevra pas de mail l'invitant à créer son mot de passe et accéder à son compte. Les agents pourront déclencher l'invitation plus tard depuis l'interface web
-{% endhint %}
+    Cet endpoint ne déclenche pas l'envoi d'invitations. L'usager ne recevra pas de mail l'invitant à créer son mot de passe et accéder à son compte. Les agents pourront déclencher l'invitation plus tard depuis l'interface web
 
 #### Exemple de requête
 
@@ -378,9 +374,7 @@ curl --verbose --request 'POST' \
   * `user` : USER
   * `organisation` : ORGANISATION
 
-{% hint style="info" %}
-Un usager et une organisation ne peuvent être liées que par un seul et unique Profil. Vous recevrez une erreur si vous tentez de créer un Profil liant un couple organisation-usager déjà existant
-{% endhint %}
+    Un usager et une organisation ne peuvent être liées que par un seul et unique Profil. Vous recevrez une erreur si vous tentez de créer un Profil liant un couple organisation-usager déjà existant
 
 #### Exemple de requête
 
