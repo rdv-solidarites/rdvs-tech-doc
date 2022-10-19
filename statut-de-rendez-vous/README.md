@@ -28,7 +28,7 @@ Les agents peuvent modifier l’état d’un rendez-vous avant ou après son jou
 
 Par ailleurs, l’état `unknown` apparait différemment avant ou après le rendez-vous. Avant le rendez-vous, il est indiqué « Rendez-vous à venir ». Après le rendez-vous, il est indiqué « À renseigner ».
 
-![Avant un rendez-vous](../.gitbook/assets/capture-de-cran-2021-08-25-a-11.23.40.png)
+![Avant un rendez-vous](statut-rdv-a-venir.png)
 
-![Apr&#xE8;s un rendez-vous](../.gitbook/assets/capture-de-cran-2021-08-25-a-11.23.04.png)
+![Apr&#xE8;s un rendez-vous](statut-rdv-a-renseigner.png)
 
