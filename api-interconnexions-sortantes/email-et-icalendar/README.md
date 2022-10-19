@@ -6,9 +6,9 @@ Ces emails contiennent les informations de l’_évènement_, c’est-à-dire le
 
 En images, le comportement sur Zimbra de l’ajout manuel d’une plage d’ouverture créée dans RDV-solidarités:
 
-![](../../.gitbook/assets/76201480-9e5c0780-61f3-11ea-921a-2de6f5884518.png)
+![](lien_pour_ajouter_dans_le_calendrier.png)
 
-![](../../.gitbook/assets/76201596-c9465b80-61f3-11ea-9c43-4c600ccb99c2.png)
+![](ajouter_dans_le_calendrier.png)
 
-![](../../.gitbook/assets/76201489-a1ef8e80-61f3-11ea-96c4-7eb48ee221ca.png)
+![](visualisation_rdv_dans_le_calendrier.png)
 

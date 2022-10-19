@@ -49,5 +49,5 @@ Présentation faite aux DSIs : [https://docs.google.com/file/d/1leeQ1B507eNgi2pW
 
 ### Emails et icalendar
 
-En plus des webhooks, RDV-Solidarités peut notifier votre SI en [envoyant des emails aux agents](zimbra.md).
+En plus des webhooks, RDV-Solidarités peut notifier votre SI en [envoyant des emails aux agents](email-et-icalendar/).
 
