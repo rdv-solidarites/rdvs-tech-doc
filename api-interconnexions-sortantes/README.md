@@ -1,9 +1,3 @@
----
-description: >-
-  RDV-Solidarités peut notifier votre système d’information à l’aide de webhooks
-  ou en envoyant des ics par email.
----
-
 # API de notifications
 
 RDV-Solidarités peut notifier n'importe quel système d'information accessible en ligne lors de **modifications** \(création, modification, suppression\) sur les **RDV,** les **plages d'ouvertures** et les **absences.**
