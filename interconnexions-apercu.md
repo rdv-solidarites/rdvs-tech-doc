@@ -1,10 +1,6 @@
----
-description: >-
-  Cette page est une vue d'ensemble des possibilités d'interconnexion de
-  RDV-Solidarités avec vos SI existants
----
-
 # Interconnexions aperçu
+
+Cette page est une vue d'ensemble des possibilités d'interconnexion de RDV-Solidarités avec vos SI existants
 
 ![](../.gitbook/assets/untitled-2021-01-26-1413-1-.png)
 
@@ -18,7 +14,7 @@ Désactivée par défaut. Nécessite l'intervention de la DSI de votre départem
 
 Si vous avez besoin d'autoriser les requêtes de RDV-Solidarités à entrer sur votre réseau, vous trouverez les IP à autoriser sur la page de notre hébergeur [https://doc.scalingo.com/platform/internals/network\#outgoing-ip-addresses-range](https://doc.scalingo.com/platform/internals/network#outgoing-ip-addresses-range) RDV-Solidarité est hébergé sur la region SecNumCloud \(osc-secnum-fr1\).
 
-{% page-ref page="api-interconnexions-sortantes/" %}
+[api-interconnexions-sortantes](/api-interconnexions-sortantes)
 
 ## Interconnexion entrante via API
 
@@ -26,7 +22,7 @@ Désactivée par défaut. Nécessite l'intervention de la DSI de votre départem
 
 Elle permet des intégrations plus fines, et de créer et modifier des RDVs, absences, plages d'ouvertures etc... automatiquement depuis des systèmes externes
 
-{% page-ref page="api-interconnexions-entrantes/" %}
+[api-interconnexions-entrantes](/api-interconnexions-entrantes)
 
 
 
