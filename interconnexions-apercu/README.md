@@ -2,7 +2,7 @@
 
 Cette page est une vue d'ensemble des possibilités d'interconnexion de RDV-Solidarités avec vos SI existants
 
-![](../.gitbook/assets/untitled-2021-01-26-1413-1-.png)
+![](apercu_interconnexion.png)
 
 ## Interconnexion sortante via email
 
