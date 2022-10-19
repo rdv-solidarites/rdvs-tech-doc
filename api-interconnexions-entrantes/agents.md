@@ -1,8 +1,6 @@
----
-description: Consultation des agents membres des organisations de l’agent connecté
----
-
 # Agents
+
+Consultation des agents membres des organisations de l’agent connecté
 
 ### Index
 
@@ -18,17 +16,13 @@ description: Consultation des agents membres des organisations de l’agent conn
 
 #### Exemple de requête
 
-{% tabs %}
-{% tab title="httpie" %}
 ```bash
 http 'https://www.rdv-solidarites.fr/api/v1/agents?organisation_id=1' \
  access-token:FLXP6G2hIEYhmGe5MpHKfg \
  client:fySY0UMlNzgbhE8QYhXdkw \
  uid:'martine@demo.rdv-solidarites.fr'
 ```
-{% endtab %}
 
-{% tab title="curl" %}
 ```bash
 curl --verbose \
   --header 'access-token: FLXP6G2hIEYhmGe5MpHKfg' \
@@ -36,8 +30,6 @@ curl --verbose \
   --header 'uid: martine@demo.rdv-solidarites.fr' \
   'https://www.rdv-solidarites.fr/api/v1/absences?organisation_id=1'
 ```
-{% endtab %}
-{% endtabs %}
 
 #### Exemple de réponse
 

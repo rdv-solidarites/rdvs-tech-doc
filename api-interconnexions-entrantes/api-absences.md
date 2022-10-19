@@ -1,10 +1,6 @@
----
-description: >-
-  Lecture, création, modification, suppression d‘absences via l’API de
-  RDV-Solidarités.
----
-
 # Absences
+
+Lecture, création, modification, suppression d‘absences via l’API de RDV-Solidarités.
 
 ### Index
 
@@ -20,17 +16,13 @@ description: >-
 
 #### Exemple de requête
 
-{% tabs %}
-{% tab title="httpie" %}
 ```bash
 http 'https://www.rdv-solidarites.fr/api/v1/absences' \
  access-token:FLXP6G2hIEYhmGe5MpHKfg \
  client:fySY0UMlNzgbhE8QYhXdkw \
  uid:'martine@demo.rdv-solidarites.fr'
 ```
-{% endtab %}
 
-{% tab title="curl" %}
 ```bash
 curl --verbose \
   --header 'access-token: FLXP6G2hIEYhmGe5MpHKfg' \
@@ -38,8 +30,6 @@ curl --verbose \
   --header 'uid: martine@demo.rdv-solidarites.fr' \
   'https://www.rdv-solidarites.fr/api/v1/absences'
 ```
-{% endtab %}
-{% endtabs %}
 
 #### Exemple de réponse
 
@@ -93,17 +83,13 @@ HTTP/1.1 200 OK
 
 #### Exemple de requête
 
-{% tabs %}
-{% tab title="httpie" %}
 ```bash
 http 'https://www.rdv-solidarites.fr/api/v1/absences/14' \
  access-token:FLXP6G2hIEYhmGe5MpHKfg \
  client:fySY0UMlNzgbhE8QYhXdkw \
  uid:'martine@demo.rdv-solidarites.fr'
 ```
-{% endtab %}
 
-{% tab title="curl" %}
 ```
 curl --verbose \
   --header 'access-token: FLXP6G2hIEYhmGe5MpHKfg' \
@@ -111,8 +97,6 @@ curl --verbose \
   --header 'uid: martine@demo.rdv-solidarites.fr' \
   'https://www.rdv-solidarites.fr/api/v1/absences/14'
 ```
-{% endtab %}
-{% endtabs %}
 
 #### Exemple de réponse
 
@@ -169,8 +153,6 @@ L’API de création d'absence ne permet pour l'instant pas de créer des absenc
 
 #### Exemple de requête
 
-{% tabs %}
-{% tab title="httpie" %}
 ```bash
 http --json POST https://www.rdv-solidarites.fr/api/v1/absences \
   access-token:FLXP6G2hIEYhmGe5MpHKfg \
@@ -184,9 +166,7 @@ http --json POST https://www.rdv-solidarites.fr/api/v1/absences \
   end_day="2020-11-20" \
   end_time="18:00"
 ```
-{% endtab %}
 
-{% tab title="curl" %}
 ```bash
 curl --verbose --request 'POST' \
   --header 'access-token: FLXP6G2hIEYhmGe5MpHKfg' \
@@ -196,62 +176,6 @@ curl --verbose --request 'POST' \
   --data '{"agent_id":"1","end_day":"2020-11-20","end_time":"18:00","first_day": "2020-11-20","organisation_id":"1","start_time":"08:00","title":"Congé parental"}' \
   'https://www.rdv-solidarites.fr/api/v1/absences'
 ```
-{% endtab %}
-{% endtabs %}
-
-#### Exemple de réponse
-
-```bash
-HTTP/1.1 200 OK
-...
-
-{
-    "absence": {
-        "agent": {
-            "email": "martine@demo.rdv-solidarites.fr",
-            "first_name": "Martine",
-            "id": 1,
-            "last_name": "VALIDAY"
-        },
-        "end_day": "2020-11-20",
-        "end_time": "18:00:00",
-        "first_day": "2020-11-20",
-        "ical_uid": "absence_10@RDV Solidarités",
-        "id": 10,
-        "organisation": {
-            "departement": "75",
-            "id": 1,
-            "name": "MDS Paris Nord"
-        },
-        "start_time": "08:00:00",
-        "title": "Congé parental"
-    }
-}
-```
-
-### Modification
-
-**`PUT /api/v1/absences/:id`**
-
-**`PATCH /api/v1/absences/:id`**
-
-#### Paramètres
-
-* `id`: l’identifiant de l’absence
-* `title` TEXT : le titre de l’absence
-* `first_day` DATE : le jour de début de l'absence
-* `start_time` TIME : l'heure de début de l'absence
-* `end_day` DATE : le jour de fin de l'absence
-* `end_time` TIME : l'heure de fin de l'absence
-
-#### Réponse
-
-* `absence` : ABSENCE. L’absence modifiée.
-
-#### Exemple de requête
-
-{% tabs %}
-{% tab title="httpie" %}
 ```bash
 http --json PATCH https://www.rdv-solidarites.fr/api/v1/absences/10 \
   access-token:FLXP6G2hIEYhmGe5MpHKfg \
@@ -259,9 +183,7 @@ http --json PATCH https://www.rdv-solidarites.fr/api/v1/absences/10 \
   uid:martine@demo.rdv-solidarites.fr \
   title="Congé maladie"
 ```
-{% endtab %}
 
-{% tab title="curl" %}
 ```bash
 curl --verbose --request 'PATCH' \
   --header 'access-token: FLXP6G2hIEYhmGe5MpHKfg' \
@@ -271,8 +193,6 @@ curl --verbose --request 'PATCH' \
   --data '{"title":"Congé maladie"}' \
   'https://www.rdv-solidarites.fr/api/v1/absences/10'
 ```
-{% endtab %}
-{% endtabs %}
 
 #### Exemple de réponse
 
@@ -318,17 +238,13 @@ HTTP/1.1 200 OK
 
 #### Exemple de requête
 
-{% tabs %}
-{% tab title="httpie" %}
 ```bash
 http DELETE https://www.rdv-solidarites.fr/api/v1/absences/10 \
   access-token:FLXP6G2hIEYhmGe5MpHKfg \
   client:fySY0UMlNzgbhE8QYhXdkw \
   uid:martine@demo.rdv-solidarites.fr
 ```
-{% endtab %}
 
-{% tab title="curl" %}
 ```
 curl --verbose --request 'DELETE' \
   --header 'access-token: FLXP6G2hIEYhmGe5MpHKfg' \
@@ -337,8 +253,6 @@ curl --verbose --request 'DELETE' \
   --header 'Content-Type: application/json' \
   'https://www.rdv-solidarites.fr/api/v1/absences/10'
 ```
-{% endtab %}
-{% endtabs %}
 
 #### Exemple de réponse
 

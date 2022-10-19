@@ -1,8 +1,6 @@
----
-description: 'Consultation, création et invitation d’usagers via l’API de RDV-Solidarités'
----
-
 # Usagers
+
+'Consultation, création et invitation d’usagers via l’API de RDV-Solidarités'
 
 ### Usagers et Profils
 
@@ -24,17 +22,13 @@ Un Profil Usager lie un Usager à une Organisation. La plupart des usagers n'ont
 
 #### Exemple de requête
 
-{% tabs %}
-{% tab title="httpie" %}
 ```http
 http GET https://www.rdv-solidarites.fr/api/v1/users \
   access-token:FLXP6G2hIEYhmGe5MpHKfg \
   client:fySY0UMlNzgbhE8QYhXdkw \
   uid:martine@demo.rdv-solidarites.fr
 ```
-{% endtab %}
 
-{% tab title="curl" %}
 ```bash
 curl --verbose \
   --header 'access-token: b-zBRj7TFto9dIJlXg5eyw' \
@@ -42,8 +36,6 @@ curl --verbose \
   --header 'uid: martine@demo.rdv-solidarites.fr' \
   'https://www.rdv-solidarites.fr/api/v1/users'
 ```
-{% endtab %}
-{% endtabs %}
 
 #### Exemple de réponse
 
@@ -98,17 +90,13 @@ curl --verbose \
 
 #### Exemple de requête
 
-{% tabs %}
-{% tab title="httpie" %}
 ```http
 http GET https://www.rdv-solidarites.fr/api/v1/3/users \
   access-token:FLXP6G2hIEYhmGe5MpHKfg \
   client:fySY0UMlNzgbhE8QYhXdkw \
   uid:martine@demo.rdv-solidarites.fr
 ```
-{% endtab %}
 
-{% tab title="curl" %}
 ```bash
 curl --verbose \
   --header 'access-token: b-zBRj7TFto9dIJlXg5eyw' \
@@ -116,8 +104,6 @@ curl --verbose \
   --header 'uid: martine@demo.rdv-solidarites.fr' \
   'https://www.rdv-solidarites.fr/api/v1/3/users'
 ```
-{% endtab %}
-{% endtabs %}
 
 #### Exemple de réponse
 
@@ -174,8 +160,6 @@ curl --verbose \
 
 #### Exemple de requête
 
-{% tabs %}
-{% tab title="httpie" %}
 ```bash
 http GET https://www.rdv-solidarites.fr/api/v1/users/102 \
   access-token:FLXP6G2hIEYhmGe5MpHKfg \
@@ -183,9 +167,7 @@ http GET https://www.rdv-solidarites.fr/api/v1/users/102 \
   uid:martine@demo.rdv-solidarites.fr
 
 ```
-{% endtab %}
 
-{% tab title="curl" %}
 ```bash
 curl --verbose \
   --header 'access-token: b-zBRj7TFto9dIJlXg5eyw' \
@@ -193,8 +175,6 @@ curl --verbose \
   --header 'uid: martine@demo.rdv-solidarites.fr' \
   'https://www.rdv-solidarites.fr/api/v1/users/1'
 ```
-{% endtab %}
-{% endtabs %}
 
 #### Exemple de réponse
 
@@ -249,8 +229,6 @@ curl --verbose \
 
 #### Exemple de requête
 
-{% tabs %}
-{% tab title="httpie" %}
 ```bash
 http GET https://www.rdv-solidarites.fr/api/v1/users/102/invite \
   access-token:FLXP6G2hIEYhmGe5MpHKfg \
@@ -258,9 +236,7 @@ http GET https://www.rdv-solidarites.fr/api/v1/users/102/invite \
   uid:martine@demo.rdv-solidarites.fr
 
 ```
-{% endtab %}
 
-{% tab title="curl" %}
 ```bash
 curl --verbose \
   --header 'access-token: b-zBRj7TFto9dIJlXg5eyw' \
@@ -268,8 +244,6 @@ curl --verbose \
   --header 'uid: martine@demo.rdv-solidarites.fr' \
   'https://www.rdv-solidarites.fr/api/v1/users/102/invite'
 ```
-{% endtab %}
-{% endtabs %}
 
 #### Exemple de réponse
 
@@ -339,8 +313,6 @@ Cet endpoint ne déclenche pas l'envoi d'invitations. L'usager ne recevra pas de
 
 #### Exemple de requête
 
-{% tabs %}
-{% tab title="httpie" %}
 ```bash
 http --json POST https://www.rdv-solidarites.fr/api/v1/users \
   access-token:qx9HksCwRWvhQixJoXMlGA \
@@ -352,9 +324,7 @@ http --json POST https://www.rdv-solidarites.fr/api/v1/users \
   email=jean@jacques.fr \
   phone_number="06 60 60 60 60"
 ```
-{% endtab %}
 
-{% tab title="curl" %}
 ```bash
 curl --verbose --request 'POST' \
   --header 'access-token: qx9HksCwRWvhQixJoXMlGA' \
@@ -364,8 +334,6 @@ curl --verbose --request 'POST' \
   --data '{"organisation_ids": [1], "first_name": "Jean", "last_name": "Jacques"}' \
   'http://localhost:5000/api/v1/users'
 ```
-{% endtab %}
-{% endtabs %}
 
 #### Exemple de réponse
 
@@ -416,8 +384,6 @@ Un usager et une organisation ne peuvent être liées que par un seul et unique 
 
 #### Exemple de requête
 
-{% tabs %}
-{% tab title="httpie" %}
 ```bash
 http --json POST https://www.rdv-solidarites.fr/api/v1/user_profiles \
   access-token:qx9HksCwRWvhQixJoXMlGA \
@@ -427,9 +393,7 @@ http --json POST https://www.rdv-solidarites.fr/api/v1/user_profiles \
   user_id:=21 \
   notes="Usager pressé"
 ```
-{% endtab %}
 
-{% tab title="curl" %}
 ```bash
 curl --verbose --request 'POST' \
   --header 'access-token: qx9HksCwRWvhQixJoXMlGA' \
@@ -439,8 +403,6 @@ curl --verbose --request 'POST' \
   --data '{"organisation_id": 1, "user_id": 21}' \
   'https://www.rdv-solidarites.fr/api/v1/user_profiles'
 ```
-{% endtab %}
-{% endtabs %}
 
 #### Exemple de réponse
 

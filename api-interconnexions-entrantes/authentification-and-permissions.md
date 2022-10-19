@@ -1,10 +1,6 @@
----
-description: >-
-  L'usage de l'API est réservé aux agents authentifiés, dans la limite de leur
-  rôle au sein de l'application.
----
-
 # Authentification
+
+L'usage de l'API est réservé aux agents authentifiés, dans la limite de leur rôle au sein de l'application.
 
 ### Authentification
 
@@ -12,19 +8,13 @@ Tous les agents peuvent utiliser l'API. Les requêtes faites sur l'API sont auth
 
 Pour récupérer le token d'accès d'un agent il faut faire une première requête POST à l'url `https://www.rdv-solidarites.fr/api/v1/auth/sign_in` en passant en paramètres JSON l'email et le mot de passe de l'agent. Par exemple :
 
-{% tabs %}
-{% tab title="httpie" %}
 ```text
 http --json POST 'https://www.rdv-solidarites.fr/api/v1/auth/sign_in' \
   email='martine@demo.rdv-solidarites.fr' password='123456'
 ```
-{% endtab %}
-{% endtabs %}
 
 En cas de succès d'authentification, la réponse à cette requête contiendra dans le corps le détail de l'agent, et dans les headers les token d'accès à l'API. Par exemple :
 
-{% tabs %}
-{% tab title="HTTP" %}
 ```http
 HTTP/1.1 200 OK
 X-Frame-Options: SAMEORIGIN
@@ -60,20 +50,14 @@ X-Runtime: 0.194743< Transfer-Encoding: chunked
 }
 * Closing connection 0
 ```
-{% endtab %}
-{% endtabs %}
 
 Les 3 headers essentiels pour l'authentification sont les suivants :
 
-{% tabs %}
-{% tab title="HTTP" %}
 ```http
 access-token: SFYBngO55ImjD1HOcv-ivQ
 client: Z6EihQAY9NWsZByfZ47i_Q
 uid: martine@demo.rdv-solidarites.fr
 ```
-{% endtab %}
-{% endtabs %}
 
 * `access-token` : c'est le jeton d'accès qui vous a été attribué. Il a une durée de vie de 24h, après ça il vous faudra reproduire cette procédure pour en récupérer un nouveau.
 * `client`: un identifiant unique associé à l'appareil depuis lequel vous avez effectué la requête

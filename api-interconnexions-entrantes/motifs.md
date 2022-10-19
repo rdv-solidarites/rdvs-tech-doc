@@ -1,8 +1,6 @@
----
-description: Lecture de Motifs via l’API de RDV-Solidarités.
----
-
 # Motifs
+
+Lecture de Motifs via l’API de RDV-Solidarités.
 
 ### Index
 
@@ -20,17 +18,13 @@ description: Lecture de Motifs via l’API de RDV-Solidarités.
 
 #### Exemple de requête
 
-{% tabs %}
-{% tab title="httpie" %}
 ```bash
 http 'https://www.rdv-solidarites.fr/api/v1/organisations/3/motifs' \
  access-token:FLXP6G2hIEYhmGe5MpHKfg \
  client:fySY0UMlNzgbhE8QYhXdkw \
  uid:'martine@demo.rdv-solidarites.fr'
 ```
-{% endtab %}
 
-{% tab title="curl" %}
 ```bash
 curl --verbose \
   --header 'access-token: FLXP6G2hIEYhmGe5MpHKfg' \
@@ -38,8 +32,6 @@ curl --verbose \
   --header 'uid: martine@demo.rdv-solidarites.fr' \
   'https://www.rdv-solidarites.fr/api/v1/absences'
 ```
-{% endtab %}
-{% endtabs %}
 
 #### Exemple de réponse
 
