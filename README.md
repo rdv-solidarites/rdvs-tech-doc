@@ -1,9 +1,9 @@
 # Documentation technique de RDV-Solidarités
 
 
-- [[/hebergement-and-securite.md]]
-- [[/interconnexions-apercu.md]]
-- [[/envoie-de-sms.md]]
-- [[/statut-de-rendez-vous.md]]
-- [[/api-interconnexions-sortantes/]]
-- [[/api-interconnexions-entrantes/]]
+- [Hébergement et sécurité](/hebergement-and-securite.md)
+- [Aperçu des interconnexions](/interconnexions-apercu.md)
+- [connecteur d'envoie de SMS](/envoie-de-sms.md)
+- [Status de RDV](/statut-de-rendez-vous.md)
+- [API Interconnexion sortantes (Webhook)](/api-interconnexions-sortantes/)
+- [API Interconnexion entrantes](/api-interconnexions-entrantes/)
